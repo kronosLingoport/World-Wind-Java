@@ -77,6 +77,8 @@ public abstract class AbstractSceneController extends WWObjectImpl implements Sc
     protected Collection<SurfaceTile> surfaceObjectTiles = new ArrayList<SurfaceTile>();
     /** The display name for the surface object tile count performance statistic. */
     protected static final String SURFACE_OBJECT_TILE_COUNT_NAME = "Surface Object Tiles";
+    
+     protected static final String SURFACE_OBJECT_TILE_COUNT_VALUE = "Surface Object Tiles Value";
 
     public AbstractSceneController()
     {
