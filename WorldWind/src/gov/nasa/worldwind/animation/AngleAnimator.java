@@ -24,6 +24,8 @@ public class AngleAnimator extends BasicAnimator
      * The angle the animation begins at.
      */
     protected Angle begin;
+    
+    protected Angle begin_test;
     /**
      * The angle the animation ends at.
      */
