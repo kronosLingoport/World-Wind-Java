@@ -18,7 +18,7 @@ public class Message extends WWEvent
     protected String name;
     /** Time at which the message was sent. */
     protected long when;
-
+    protrctrd String who;
     /**
      * Create a message. The message will be timestamped with the current system time.
      *
@@ -44,6 +44,15 @@ public class Message extends WWEvent
         this.when = when;
     }
 
+      public Message(String name, Object source, long when, String who) 
+      {
+        super(source);       
+        this.name = name;       
+        this.when = when;
+        this.who=who;
+      }
+
+
     /**
      * Indicates the message name.
      *
@@ -62,5 +71,10 @@ public class Message extends WWEvent
     public long getWhen()
     {
         return this.when;
+    }
+    
+    public String getWho()
+    {
+          return this.who;
     }
 }
